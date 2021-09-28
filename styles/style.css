@@ -1,0 +1,121 @@
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* global-header */
+.global-header .top-bar {
+  background-color: #033075;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.global-header .top-bar .top-bar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33px;
+}
+
+.global-header .top-bar .left-section {
+  display: flex;
+}
+.global-header .top-bar .left-section .lang-toggle {
+  position: relative;
+  padding-right: 20px;
+}
+.global-header .top-bar .left-section .lang-toggle:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #6d88b4;
+}
+.global-header .top-bar .left-section .lang-toggle .lang-btn {
+  position: relative;
+  padding-right: 13px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.global-header .top-bar .left-section .lang-toggle .lang-btn:hover {
+  text-decoration: underline;
+}
+.global-header .top-bar .left-section .lang-toggle .lang-btn::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 5px;
+  background: url('../assets/img/ico_arrow_bottom.png') center center;
+}
+.global-header .top-bar .left-section .lang-toggle .lang-content {
+  display: none;
+}
+.global-header .top-bar .left-section a {
+  padding: 2px 20px;
+}
+.global-header .top-bar .left-section a:hover {
+  text-decoration: underline;
+}
+
+.global-header .top-bar .right-section {
+  display: flex;
+}
+.global-header .top-bar .right-section .link-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.global-header .top-bar .right-section .link-group li:not(:last-child) {
+  position: relative;
+  padding-right: 11px;
+  margin-right: 11px;
+}
+.global-header .top-bar .right-section .link-group li:not(:last-child):after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #6d88b4;
+}
+.global-header .top-bar .right-section .link-group li:last-child {
+  margin-right: 10px;
+}
+.global-header .top-bar .right-section .link-group li a {
+  padding: 4px;
+}
+.global-header .top-bar .right-section .link-group li a:hover {
+  text-decoration: underline;
+}
+.global-header .top-bar .right-section .zoom-btn {
+  display: flex;
+}
+.global-header .top-bar .right-section .zoom-btn button {
+  width: 18px;
+  height: 18px;
+  background: url('../assets/img/ico-zoom-btn.png');
+}
+.global-header .top-bar .right-section .zoom-btn .minus-btn {
+  background-position: 0 18px;
+}
+.global-header .top-bar .right-section .zoom-btn .txt {
+  padding: 0 10px;
+  background-color: #5379a9;
+}
+.global-header .top-bar .right-section .zoom-btn .plus-btn {
+  background-position: 18px 0;
+}
