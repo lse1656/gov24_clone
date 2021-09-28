@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/base/reset.css" />
     <link rel="stylesheet" href="./styles/base/font.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/base/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +22,7 @@
   </head>
   <body>
     <header class="global-header">
-      <section class="top-bar">
+      <section class="top-bar lg-only">
         <h1 class="ir_su">상단바</h1>
         <div class="inner">
           <div class="top-bar-wrap">
@@ -37,6 +38,7 @@
               <a href="#">어린이</a>
             </div>
             <div class="right-section">
+              <!-- NOTE: 로그인을 한 경우 -->
               <ul class="link-group">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
@@ -57,6 +59,9 @@
       <section class="main-header">
         <div class="inner">
           <div class="main-header-wrap">
+            <div class="side-menu-btn lg-hidden">
+              <button type="button" aria-label="전체메뉴 보기 버튼"></button>
+            </div>
             <h1 class="main-logo">
               <a href="#">
                 <img
@@ -65,7 +70,10 @@
                 />
               </a>
             </h1>
-            <nav class="gnb">
+            <div class="mypage-btn lg-hidden">
+              <a href="#" aria-label="마이페이지 가기 버튼"></a>
+            </div>
+            <nav class="gnb lg-only">
               <ul class="gnb-list">
                 <li class="gnb-item">
                   <h3><a href="#">서비스</a></h3>
@@ -84,7 +92,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="guide-link" aria-label="고객 가이드 바로가기">
+            <div class="guide-link lg-only" aria-label="고객 가이드 바로가기">
               <a href="#">처음오셨나요?</a>
             </div>
           </div>
