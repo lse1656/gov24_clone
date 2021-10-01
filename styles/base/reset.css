@@ -37,6 +37,21 @@ button {
   color: #333;
 }
 
+form,
+input,
+textarea {
+  border: 0;
+  background-color: inherit;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.4;
+  color: #333;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -70,6 +85,12 @@ img {
   text-indent: -9999px;
 }
 
+.clearfix:after {
+  content: '';
+  display: black;
+  clear: both;
+}
+
 @media screen and (max-width: 1262px) {
   .lg-only {
     display: none;
@@ -77,7 +98,7 @@ img {
 }
 @media screen and (min-width: 1262px) and (max-width: 703px) {
   .md-only {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 703px) {
@@ -87,7 +108,7 @@ img {
 }
 @media screen and (min-width: 1262px) {
   .lg-hidden {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 1262px) and (min-width: 703px) {
