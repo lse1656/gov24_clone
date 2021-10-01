@@ -168,30 +168,49 @@
         <div class="keyword-wrap">
           <div class="keyword-search">
             <form class="input-form" action="" method="GET">
-              <input type="text" placeholder="검색어를 입력하세요" />
+              <input type="text" placeholder="검색어를 입력하세요." />
             </form>
+            <button
+              class="search-btn"
+              type="button"
+              aria-label="검색하기 버튼"
+            ></button>
           </div>
           <div class="keyword-recom">
             <h3>추천검색어</h3>
-            <ol class="vertical-slider">
-              <li>
-                <a href="#"><strong>1</strong>주민등록등본</a>
-              </li>
-              <li>
-                <a href="#"><strong>2</strong>전입신고</a>
-              </li>
-              <li>
-                <a href="#"><strong>3</strong>주민등록초본</a>
-              </li>
-              <li>
-                <a href="#"><strong>4</strong>지방세완납증명서</a>
-              </li>
-              <li>
-                <a href="#"><strong>5</strong>졸업증명서</a>
-              </li>
-            </ol>
-            <button class="recom-btn" type="button"></button>
-            <ol class="recom-cont">
+
+            <div class="recom-carousel">
+              <ol class="recom-slider">
+                <li>
+                  <a href="#"><strong>1</strong>주민등록등본</a>
+                </li>
+                <li>
+                  <a href="#"><strong>2</strong>전입신고</a>
+                </li>
+                <li>
+                  <a href="#"><strong>3</strong>주민등록초본</a>
+                </li>
+                <li>
+                  <a href="#"><strong>4</strong>지방세완납증명서</a>
+                </li>
+                <li>
+                  <a href="#"><strong>5</strong>졸업증명서</a>
+                </li>
+              </ol>
+            </div>
+            <div class="recom-slider-control">
+              <button
+                class="open-btn active"
+                type="button"
+                aria-label="추천검색어 열기"
+              ></button>
+              <button
+                class="close-btn"
+                type="button"
+                aria-label="추천검색어 닫기"
+              ></button>
+            </div>
+            <ol class="recom-slider-cont">
               <li><a href="#">주민등록등본</a></li>
               <li><a href="#">전입신고</a></li>
               <li><a href="#">주민등록초본</a></li>
@@ -202,35 +221,311 @@
         </div>
       </div>
     </section>
+    <!-- keyword-section -->
+    <section class="often-service">
+      <div class="inner">
+        <div class="often-service-wrap">
+          <div class="section-title lg-only">
+            <h2>
+              자주 찾는<br />
+              서비스
+            </h2>
+            <p>
+              전자증명서는<br />
+              모바일 앱 전용<br />
+              서비스입니다.
+            </p>
+            <a class="more-btn" href="#" aria-label="전체 서비스 보기"
+              >전체 서비스</a
+            >
+          </div>
+
+          <div class="service-box">
+            <!-- <h3 class="md-only">자주 찾는 서비스</h3> -->
+            <p class="lg-only">
+              <strong>자주 찾는 서비스</strong>를 안내합니다.
+            </p>
+            <div class="service-carousel">
+              <ul class="carousel-wrap my-slider3">
+                <li class="carousel-page page01">
+                  <ul class="item-row">
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type01">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>주민등록초본<br />(초본)</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type02">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>건축물대장</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type03">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>토지(임야)<br />대장</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type04">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>지적도<br />(임야도)</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type05">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>토지이용<br />계획</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type06">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>예방접종<br />증명</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="item-row">
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type07"></span>
+                        <p>요금감면<br />일괄신청</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type08"></span>
+                        <p>지방세<br />환급계좌</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type09"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>지방세<br />납세증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type10"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>지방세 세목별<br />과세증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type11"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>납세증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type12"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>소득금액<br />증명</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="carousel-page page02">
+                  <ul class="item-row">
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type01">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>건강보험<br />자격득실확인</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type02">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>건강보험료<br />납부확인</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type03">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>출입국<br />사실증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type04">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>병적증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type05">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>자동차<br />등록원부</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type06">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>운전경력<br />증명</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="item-row">
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type07"> </span>
+                        <p>운전면허<br />정보</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type08"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>부가가치세<br />과세표준증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type09"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>사업자등록<br />증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type10"></span>
+                        <p>통신판매업</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type11"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>보육교직원<br />경력(재직)증명</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type12"
+                          ><span class="auth-tag" aria-label="전자증명서"></span
+                        ></span>
+                        <p>초중등학교<br />졸업(예정)증명</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="carousel-page page03">
+                  <ul class="item-row">
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type01">
+                          <span class="auth-tag" aria-label="전자증명서"></span>
+                        </span>
+                        <p>농지원부</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type02"> </span>
+                        <p>국민연금<br />가입내역</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type03"> </span>
+                        <p>토지 제증명<br />일괄 신청</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type04"> </span>
+                        <p>대학 제증명<br />일괄 신청</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon icon-type05"> </span>
+                        <p>국세 제증명<br />일괄 신청</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="carousel-control">
+                <button
+                  class="prev-btn"
+                  type="button"
+                  aria-label="이전 페이지"
+                ></button
+                ><button
+                  class="next-btn"
+                  type="button"
+                  aria-label="다음 페이지"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer-box">
+            <div class="notice-wrap">
+              <h3>공지사항</h3>
+              <ul class="notice-list">
+                <li><a href="#">우편요금 조정에 따른 우송료 변경안내</a></li>
+                <li><a href="#">정부24 개인정보 파기 안내</a></li>
+                <li>
+                  <a href="#"
+                    >[어디서나대학민원] 용인예술과학대학교 금요일 격주 휴무
+                    안내</a
+                  >
+                </li>
+              </ul>
+              <a class="more-btn" href="#" aria-label="전체보기"></a>
+            </div>
+
+            <ul class="customer-list">
+              <li class="item01"><a href="#">자주 묻는 질문</a></li>
+              <li class="item02"><a href="#">돌봄시설 등 위치 찾기</a></li>
+              <li class="item03">
+                <a href="#"><em>모바일 앱 전용</em>전자증명서 이용안내</a>
+              </li>
+              <li class="item04"><a href="#">국민비서 꾸삐</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- often-service -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script>
-      var slider = tns({
-        container: '.my-slider',
-        slideBy: 'page',
-        mode: 'gallery',
-        // autoplay: true,
-        nav: false,
-        controlsContainer: '.carousel-control',
-        prevButton: '.prev-btn',
-        nextButton: '.next-btn',
-        // autoplayText: [
-        //   '<button class="start-btn" type="button"></button>',
-        //   '<button class="stop-btn" type="button"></button>',
-        // ],
-        // autoplayPosition: 'bottom',
-      });
-
-      var slider2 = tns({
-        container: '.vertical-slider',
-        slideBy: 'page',
-        axis: 'vertical',
-        autoplay: true,
-        nav: false,
-        controls: false,
-        autoplayHoverPause: true,
-        autoplayButtonOutput: false,
-      });
-    </script>
+    <script src="./js/tinySlider.js"></script>
   </body>
 </html>

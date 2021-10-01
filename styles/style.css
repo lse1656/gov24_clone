@@ -1,6 +1,8 @@
 /* layout */
 .global-header {
+  position: relative;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 20;
 }
 
 /* inner */
@@ -207,6 +209,532 @@
   text-decoration: underline;
 }
 
+/* visual-section */
+.visual-section {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.visual-section .visual-banner {
+  position: absolute;
+  height: 250px;
+  width: 1366px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.visual-section .visual-banner .carousel-slider {
+  position: absolute;
+  top: 0;
+  left: -285px;
+}
+.visual-section .visual-banner .carousel-slider .my-slider li img {
+  width: 1920px;
+  height: 250px;
+}
+
+.visual-section .visual-banner .carousel-control {
+  position: absolute;
+  left: 40%;
+  bottom: 40px;
+  width: 130px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.visual-section .visual-banner .carousel-control button {
+  width: 20px;
+  height: 20px;
+}
+.visual-section .visual-banner .carousel-control .prev-btn {
+  background: url('../assets/img/ico_slide_prev.png') no-repeat center center;
+}
+.visual-section .visual-banner .carousel-control .next-btn {
+  background: url('../assets/img/ico-slide-next.png') no-repeat center center;
+}
+.visual-section .visual-banner .carousel-control .start-btn {
+  background: url('../assets/img/ico-slide-start.png') no-repeat center center;
+}
+.visual-section .visual-banner .carousel-control .stop-btn {
+  background: url('../assets/img/ico-slide-stop.png') no-repeat center center;
+}
+
+.visual-section .inner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.visual-section .login-form {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 16px 19px 17px 19px;
+  background-color: #fff;
+}
+.visual-section .login-form a:hover {
+  text-decoration: underline;
+}
+.visual-section .login-form .login-text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+}
+.visual-section .login-form .login-btn a {
+  display: inline-block;
+  width: 286px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1089d2;
+}
+.visual-section .login-form .login-list {
+  display: flex;
+  align-items: center;
+}
+.visual-section .login-form .login-list li {
+  position: relative;
+}
+.visual-section .login-form .login-list li:nth-child(2) {
+  margin-right: 20px;
+}
+.visual-section .login-form .login-list li a {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+}
+.visual-section .login-form .login-list li:nth-child(2) a {
+  padding-left: 0;
+}
+.visual-section .login-form .login-list li:first-child::after {
+  display: inline-block;
+  content: '';
+  margin: -2px 12px;
+  width: 1px;
+  height: 12px;
+  background-color: #e0e0e0;
+}
+.visual-section .login-form .login-list li:not(:nth-child(2)) a::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+}
+.visual-section .login-form .login-list li:first-child a::before {
+  background: url('../assets/img/ico_key.png') no-repeat center center;
+}
+.visual-section .login-form .login-list li:last-child a::before {
+  background: url('../assets/img/ico_join.png') no-repeat center center;
+}
+
+/* keyword-section */
+.keyword-section {
+  position: relative;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+.keyword-section .keyword-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background-color: #f7faff;
+  border: 1px solid #d5dbe5;
+  box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.keyword-section .keyword-search {
+  position: relative;
+  margin-right: 50px;
+  width: 100%;
+  background-color: #fff;
+}
+.keyword-section .keyword-search .input-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+  height: 60px;
+  border: 3px solid #3352a4;
+  border-radius: 30px;
+}
+.keyword-section .keyword-search .input-form :placeholder-shown {
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.keyword-section .keyword-search .search-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  background: #335ae4 url('../assets/img/ico_btn_search.png') no-repeat center
+    center;
+  border-radius: 50%;
+}
+
+.keyword-section .keyword-recom {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.keyword-section .keyword-recom h3 {
+  margin-right: 10px;
+}
+.keyword-section .keyword-recom .recom-carousel {
+  border-bottom: 2px solid #033075;
+}
+.keyword-section .keyword-recom .recom-slider li strong {
+  color: #1089d2;
+  margin-right: 15px;
+}
+.keyword-section .keyword-recom .recom-slider-control button.open-btn {
+  width: 40px;
+  height: 40px;
+  background: url('../assets/img/ico_keyword_arrow_up.png') no-repeat center
+    center;
+}
+.keyword-section .keyword-recom .recom-slider-cont {
+  display: none;
+}
+
+/* section-title */
+.section-title {
+  position: relative;
+}
+.section-title h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: -2px;
+}
+.section-title p {
+  color: #666;
+}
+
+/* often-service */
+.often-service {
+  margin-bottom: 20px;
+}
+.often-service .often-service-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.often-service .section-title {
+  padding-top: 25px;
+}
+.often-service .section-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 54px;
+  height: 1px;
+  background-color: #404040;
+}
+.often-service .section-title .more-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35px;
+  padding: 0 13px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #888;
+  background: url('../assets/img/btn_fs_more.png') no-repeat 95px center;
+}
+.often-service .section-title .more-btn:hover {
+  text-decoration: underline;
+}
+
+.often-service .service-box {
+  border: 1px solid #ddd;
+}
+.often-service .service-box h3 {
+  padding: 16px 0 10px 25px;
+  font-size: 24px;
+}
+.often-service .service-box > p {
+  padding: 16px 0 19px 21px;
+  font-size: 20px;
+}
+.often-service .service-box p strong {
+  color: #5778cd;
+}
+.often-service .service-box .service-carousel {
+  position: relative;
+  width: 784px;
+  margin-bottom: 73px;
+}
+.often-service .service-box .service-carousel .carousel-wrap {
+  padding: 10px 0;
+}
+.often-service .service-box .service-carousel .carousel-page {
+  padding: 0 35px;
+}
+.often-service .service-box .service-carousel .item-row {
+  display: flex;
+}
+.often-service .service-box .service-carousel .item-row:first-child {
+  margin-bottom: 19px;
+}
+.often-service .service-box .service-carousel .item-row li {
+  text-align: center;
+  width: 16.6666%;
+}
+.often-service .service-box .service-carousel .item-row li a {
+  font-size: 14px;
+}
+.often-service .service-box .service-carousel .item-row li a:hover {
+  text-decoration: underline;
+}
+.often-service .icon {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 90px;
+  height: 90px;
+  background: #f4f6f8 url('../assets/img/spr_new_ico_PC2.png') no-repeat;
+  border-radius: 15px;
+}
+.carousel-page > ul > li > a > span > span {
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 54px;
+  height: 54px;
+  background: url('../assets/img/auth-tag.png') no-repeat center center;
+  background-size: cover;
+}
+.often-service .page01 .icon-type02 {
+  background-position: 0 -180px;
+}
+.often-service .page01 .icon-type03 {
+  background-position: 0 -90px;
+}
+.often-service .page01 .icon-type04 {
+  background-position: -90px 0;
+}
+.often-service .page01 .icon-type05 {
+  background-position: -90px -360px;
+}
+.often-service .page01 .icon-type06 {
+  background-position: -180px 0;
+}
+.often-service .page01 .icon-type07 {
+  background-position: -176px -894px;
+}
+.often-service .page01 .icon-type08 {
+  background-position: -2px -990px;
+}
+.often-service .page01 .icon-type09 {
+  background-position: -0px -540px;
+}
+.often-service .page01 .icon-type10 {
+  background-position: -90px -450px;
+}
+.often-service .page01 .icon-type11 {
+  background-position: -180px -720px;
+}
+.often-service .page01 .icon-type12 {
+  background-position: 0 -270px;
+}
+/* page02 */
+.often-service .page02 .icon-type01 {
+  background-position: -180px -180px;
+}
+.often-service .page02 .icon-type02 {
+  background-position: -180px -270px;
+}
+.often-service .page02 .icon-type03 {
+  background-position: -90px -90px;
+}
+.often-service .page02 .icon-type04 {
+  background-position: -90px -540px;
+}
+.often-service .page02 .icon-type05 {
+  background-position: 0 -630px;
+}
+.often-service .page02 .icon-type06 {
+  background-position: -90px -630px;
+}
+.often-service .page02 .icon-type07 {
+  background-position: 1px -450px;
+}
+.often-service .page02 .icon-type08 {
+  background-position: 0 -810px;
+}
+.often-service .page02 .icon-type09 {
+  background-position: -90px -810px;
+}
+.often-service .page02 .icon-type10 {
+  background-position: -180px -90px;
+}
+.often-service .page02 .icon-type11 {
+  background-position: -175px -810px;
+}
+.often-service .page02 .icon-type12 {
+  background-position: -2px -895px;
+}
+/* page03 */
+.often-service .page03 .icon-type01 {
+  background-position: -90px -895px;
+}
+.often-service .page03 .icon-type02 {
+  background-position: 0 -360px;
+}
+.often-service .page03 .icon-type03 {
+  background-position: 0 -720px;
+}
+.often-service .page03 .icon-type04 {
+  background-position: -90px -180px;
+}
+.often-service .page03 .icon-type05 {
+  background-position: -90px -720px;
+}
+/* carousel-control */
+.often-service .service-carousel .carousel-control button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+}
+.often-service .service-carousel .carousel-control button.prev-btn {
+  left: 3px;
+  background: url('../assets/img/ico_slide_prev_type03.png') no-repeat center
+    center;
+  background-size: contain;
+}
+.often-service .service-carousel .carousel-control button.next-btn {
+  right: 3px;
+  background: url('../assets/img/ico_slide_next_type03.png') no-repeat center
+    center;
+  background-size: contain;
+}
+
+.often-service .customer-box {
+  width: 324px;
+  border: 1px solid #ddd;
+}
+.often-service .customer-box h3 {
+  padding: 23px 0 25px 24px;
+  font-size: 24px;
+}
+.often-service .customer-box .notice-wrap {
+  position: relative;
+}
+.often-service .customer-box .notice-wrap .notice-list {
+  padding: 0 29px 24px 25px;
+  border-bottom: 1px solid #ddd;
+}
+.often-service .customer-box .notice-wrap .notice-list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.often-service .customer-box .notice-wrap .notice-list li:last-child {
+  margin-bottom: 0;
+}
+.often-service .customer-box .notice-wrap .notice-list li:before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #999;
+  border-radius: 50%;
+}
+.often-service .customer-box .notice-wrap .notice-list li a {
+  display: inline-block;
+  width: 253px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #666;
+}
+.often-service .customer-box .notice-wrap .notice-list li a:hover {
+  text-decoration: underline;
+}
+.often-service .customer-box .notice-wrap .more-btn {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #666;
+  background: url('../assets/img/ico_btn_more.png') no-repeat center center;
+}
+
+.often-service .customer-box .customer-list li {
+  border-bottom: 1px solid #ddd;
+}
+.often-service .customer-box .customer-list li a {
+  position: relative;
+  display: block;
+  padding: 17px 25px 17px 70px;
+  background: url('../assets/img/btn_fs_more.png') no-repeat 91% center;
+}
+.often-service .customer-box .customer-list li a:hover {
+  text-decoration: underline;
+}
+.often-service .customer-box .customer-list li a::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 18px;
+  width: 38px;
+  height: 38px;
+  background: url('../assets/img/ico_spr_customer.png') no-repeat;
+}
+.often-service .customer-box .customer-list .item02 a::before {
+  background-position: -84px 0;
+}
+.often-service .customer-box .customer-list .item03 a::before {
+  background-position: -42px 0;
+}
+.often-service .customer-box .customer-list .item04 a::before {
+  background-position: -169px 0;
+}
+.often-service .customer-box .customer-list .item03 a {
+  padding: 14px 25px 14px 70px;
+}
+.often-service .customer-box .customer-list .item03 a em {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+.often-service .customer-box .customer-list .item04 {
+  border: 0;
+  background-color: #f4f6f8;
+}
+
 /* media query */
 @media (max-width: 1280px) {
   .inner {
@@ -223,5 +751,11 @@
   }
   .global-header .main-header .main-logo img {
     height: 48px;
+  }
+  .keyword-section .inner {
+    padding: 0 10px;
+  }
+  .often-service .inner {
+    padding: 0 10px;
   }
 }
