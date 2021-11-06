@@ -22,6 +22,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 em {
   font-style: normal;
@@ -32,6 +35,7 @@ button {
   background-color: inherit;
   cursor: pointer;
   font-family: 'Nanum Gothic', sans-serif;
+  font-size: inherit;
   line-height: 1.4;
   letter-spacing: -1px;
   color: #333;
@@ -87,13 +91,13 @@ img {
 
 .clearfix:after {
   content: '';
-  display: black;
+  display: block;
   clear: both;
 }
 
 @media screen and (max-width: 1262px) {
   .lg-only {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 1262px) and (max-width: 703px) {
@@ -103,7 +107,7 @@ img {
 }
 @media screen and (min-width: 703px) {
   .sm-only {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 1262px) {
@@ -113,11 +117,11 @@ img {
 }
 @media screen and (max-width: 1262px) and (min-width: 703px) {
   .md-hidden {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 703px) {
   .sm-hidden {
-    display: none;
+    display: none !important;
   }
 }
