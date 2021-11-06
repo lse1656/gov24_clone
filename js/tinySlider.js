@@ -1,36 +1,73 @@
-var slider = tns({
-  container: '.my-slider',
+var visualCarousel = tns({
+  container: '.visual-carousel .visual-carousel-slider',
   slideBy: 'page',
   mode: 'gallery',
-  // autoplay: true,
+  autoplay: true,
   nav: false,
-  controlsContainer: '.carousel-control',
-  prevButton: '.prev-btn',
-  nextButton: '.next-btn',
-  // autoplayText: [
-  //   '<button class="start-btn" type="button"></button>',
-  //   '<button class="stop-btn" type="button"></button>',
-  // ],
-  // autoplayPosition: 'bottom',
+  controlsContainer: '.visual-carousel .visual-carousel-control',
+  prevButton: '.visual-carousel-control .prev-btn',
+  nextButton: '.visual-carousel-control .next-btn',
+  autoplayButton: '.visual-carousel-control .visual-carousel-auto',
+  // center: true,
+  // fixedWidth: 1920,
 });
 
-var slider2 = tns({
-  container: '.recom-slider',
+var recomCarousel = tns({
+  container: '.recom-carousel-slider',
   slideBy: 'page',
   axis: 'recom',
-  // autoplay: true,
+  autoplay: true,
   nav: false,
   controls: false,
   autoplayHoverPause: true,
   autoplayButtonOutput: false,
 });
 
-var slider3 = tns({
-  container: '.my-slider3',
+var serviceCarousel = tns({
+  container: '.service-carousel-slider',
   slideBy: 'page',
   mode: 'carousel',
-  nav: false,
   controlsContainer: '.service-box .carousel-control',
   prevButton: '.service-box .prev-btn',
   nextButton: '.service-box .next-btn',
+  navAsThumbnails: true,
+  navContainer: '.carousel-nav',
+  arrowKeys: true,
+});
+
+var serviceCarouselSm = tns({
+  container: '.service-carousel-slider-sm',
+  slideBy: 'page',
+  mode: 'carousel',
+  controlsContainer: '.service-box .carousel-control',
+  prevButton: '.service-box .prev-btn',
+  nextButton: '.service-box .next-btn',
+  navAsThumbnails: true,
+  navContainer: '.carousel-nav',
+  arrowKeys: true,
+});
+
+var newsCarousel = tns({
+  container: '.news-carousel-slider',
+  slideBy: 'page',
+  mode: 'carousel',
+  autoplay: true,
+  nav: false,
+  controlsContainer: '.news-carousel-control',
+  prevButton: '.news-carousel-control .prev-btn',
+  nextButton: '.news-carousel-control .next-btn',
+  autoplayButton: '.news-carousel-control .news-carousel-auto',
+});
+
+var channelCarousel = tns({
+  container: '.channel-carouel-slider',
+  slideBy: 'page',
+  mode: 'carousel',
+  items: 5,
+  gutter: 10,
+  // edgePadding: 20,
+  nav: false,
+  controlsContainer: '.commu-channel .carousel-control',
+  prevButton: '.commu-channel .prev-btn',
+  nextButton: '.commu-channel .next-btn',
 });
