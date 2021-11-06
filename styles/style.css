@@ -697,7 +697,7 @@
   background: #f4f6f8 url('../assets/img/spr_new_ico_PC2.png') no-repeat;
   border-radius: 15px;
 }
-.slider-page > ul > li > a > span > span {
+.often-service .icon .auth-tag {
   display: inline-block;
   position: absolute;
   top: -4px;
