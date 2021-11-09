@@ -76,7 +76,7 @@
     width: 33.33333%;
   }
   .often-service .service-carousel .carousel-control button.prev-btn {
-    next: 10px;
+    left: 10px;
   }
   .often-service .service-carousel .carousel-control button.next-btn {
     right: 10px;
@@ -201,6 +201,12 @@
   .news-carousel {
     width: 50%;
     height: 270px;
+  }
+  .policy-infor .local-news-tab .active .tab-content {
+    padding-top: 0;
+  }
+  .policy-infor .local-news-tab > ul > li > button {
+    padding: 15px 0;
   }
 }
 
@@ -409,6 +415,12 @@
   }
   .policy-infor-tab .tab-menu {
     padding-right: 0;
+  }
+  .policy-infor-tab .tab-menu li.active button {
+    border-top: 3px solid transparent;
+  }
+  .policy-infor-tab .tab-menu li.active button {
+    border-top: 3px solid #030075;
   }
   .policy-infor-tab .tab-content .news-article .news-txt {
     font-size: 13px;
