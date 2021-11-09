@@ -8,8 +8,8 @@ var visualCarousel = tns({
   prevButton: '.visual-carousel-control .prev-btn',
   nextButton: '.visual-carousel-control .next-btn',
   autoplayButton: '.visual-carousel-control .visual-carousel-auto',
-  // center: true,
-  // fixedWidth: 1920,
+  autoplayText: ['', ''],
+  autoplayButtonOutput: false,
 });
 
 var recomCarousel = tns({
@@ -47,6 +47,16 @@ var serviceCarouselSm = tns({
   arrowKeys: true,
 });
 
+var localCarousel1 = tns({
+  container: '.local-carousel-slider',
+  slideBy: 'page',
+  mode: 'carousel',
+  nav: false,
+  controlsContainer: '.local-carousel-control',
+  prevButton: '.local-carousel-control .prev-btn',
+  nextButton: '.local-carousel-control .next-btn',
+});
+
 var newsCarousel = tns({
   container: '.news-carousel-slider',
   slideBy: 'page',
@@ -57,6 +67,8 @@ var newsCarousel = tns({
   prevButton: '.news-carousel-control .prev-btn',
   nextButton: '.news-carousel-control .next-btn',
   autoplayButton: '.news-carousel-control .news-carousel-auto',
+  autoplayText: ['', ''],
+  autoplayButtonOutput: false,
 });
 
 var channelCarousel = tns({
