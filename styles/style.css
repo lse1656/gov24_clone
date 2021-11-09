@@ -802,6 +802,7 @@
 }
 /* carousel-nav */
 .carousel-nav {
+  display: flex;
   position: absolute;
   bottom: -40px;
   left: 50%;
@@ -814,7 +815,7 @@
   background-color: #5778cd;
   border-radius: 20px;
 }
-.carousel-nav button {
+.carousel-nav li {
   margin-right: 10px;
   width: 6px;
   height: 6px;
@@ -822,7 +823,7 @@
   border-radius: 50%;
   transition: background-color 300ms;
 }
-.carousel-nav button:last-child {
+.carousel-nav li:last-child {
   margin-right: 0;
 }
 .carousel-nav .tns-nav-active {
