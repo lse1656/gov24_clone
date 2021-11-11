@@ -77,7 +77,6 @@ var channelCarousel = tns({
   mode: 'carousel',
   items: 5,
   gutter: 10,
-  // edgePadding: 20,
   nav: false,
   controlsContainer: '.commu-channel .carousel-control',
   prevButton: '.commu-channel .prev-btn',
