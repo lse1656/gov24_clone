@@ -571,6 +571,11 @@
   height: 13px;
   background: url('../assets/img/ico_keyword_arrow_up.png') no-repeat center
     center;
+  transform: rotate(180deg);
+  transition: transform 200ms ease-in-out;
+}
+.keyword-section .keyword-recom .recom-carousel-control .open-btn.active {
+  transform: rotate(0deg);
 }
 .keyword-section .keyword-recom .recom-carousel-cont {
   display: none;
@@ -601,9 +606,7 @@
   font-weight: 600;
   color: #1089d2;
 }
-.keyword-section .keyword-recom .recom-carousel.active {
-}
-.keyword-section .keyword-recom .recom-carousel.active .recom-carousel-cont {
+.keyword-section .keyword-recom .recom-carousel .recom-carousel-cont.active {
   display: block;
 }
 
@@ -1237,7 +1240,7 @@
 
 /* foreginer */
 .match-service-tap .foreginer .tab-content {
-  background: url(../assets/img/bg_match_service_info02.png) no-repeat 97%
+  background: #fff url(../assets/img/bg_match_service_info02.png) no-repeat 97%
     center;
   background-size: 386px 212px;
 }

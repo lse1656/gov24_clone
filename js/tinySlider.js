@@ -75,10 +75,15 @@ var channelCarousel = tns({
   container: '.channel-carouel-slider',
   slideBy: 'page',
   mode: 'carousel',
-  items: 5,
+  items: 3,
   gutter: 10,
   nav: false,
   controlsContainer: '.commu-channel .carousel-control',
   prevButton: '.commu-channel .prev-btn',
   nextButton: '.commu-channel .next-btn',
+  responsive: {
+    1280: {
+      items: 5,
+    },
+  },
 });
