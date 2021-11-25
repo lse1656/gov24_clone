@@ -408,6 +408,13 @@
     .menu-item.subsidy
     .tab-content
     .subsidy-infor
+    .subsidy-desc {
+    white-space: nowrap;
+  }
+  .match-service-tap
+    .menu-item.subsidy
+    .tab-content
+    .subsidy-infor
     .section-desc {
     font-size: 20px;
     margin-bottom: 12px;
@@ -425,6 +432,10 @@
   .match-service-tap .menu-item.subsidy .tab-content .subsidy-infor a {
     margin: auto;
     width: 100%;
+  }
+  /* onestop */
+  .match-service-tap > ul > li.menu-item.onestop > div > ul > li {
+    width: 30%;
   }
   /* package */
   .match-service .match-service-tap .menu-item .tab-content .section-desc {
@@ -487,6 +498,14 @@
   }
   .policy-infor .local-news-tab > ul {
     padding-right: 0;
+    border-bottom: 0;
+  }
+  .policy-infor .local-news-tab > ul > li:last-child button {
+    border-bottom: 2px solid #030075;
+  }
+  .policy-infor .local-news-tab .local-carousel {
+    max-width: 280px;
+    margin: auto;
   }
   .policy-infor-tab .tab-content .news-article .news-txt {
     font-size: 13px;
@@ -516,9 +535,16 @@
   .commu-channel .channel-carousel {
     width: 280px;
     padding: 0;
+    margin: auto;
   }
   .commu-channel .channel-carouel-slider li {
     height: auto;
+  }
+  .commu-channel .channel-carousel .carousel-control button.prev-btn {
+    left: -15px;
+  }
+  .commu-channel .channel-carousel .carousel-control button.next-btn {
+    right: -14px;
   }
 
   /* footer */
@@ -536,6 +562,9 @@
   .footer-bottom .footer-bottom-wrap {
     padding: 40px 20px;
     font-size: 14px;
+  }
+  .footer-bottom .footer-detail-list {
+    display: block;
   }
   .footer-bottom .footer-detail-item:first-child {
     margin-bottom: 5px;

@@ -856,6 +856,7 @@
 
 .often-service .customer-box {
   width: 324px;
+  height: 442px;
   border: 1px solid #ddd;
 }
 .often-service .customer-box .notice-wrap {
@@ -866,7 +867,7 @@
   font-size: 24px;
 }
 .often-service .customer-box .notice-wrap .notice-list {
-  padding: 0 29px 14px 25px;
+  padding: 0 29px 9px 25px;
   border-bottom: 1px solid #ddd;
 }
 .often-service .customer-box .notice-wrap .notice-list li {
@@ -1578,6 +1579,12 @@
 }
 .footer-bottom .footer-bottom-wrap {
   padding: 20px 0;
+}
+.footer-top .footer-list li strong {
+  white-space: nowrap;
+}
+.footer-bottom .footer-detail-list {
+  text-align: center;
 }
 .footer-bottom .footer-detail-item {
   display: inline-flex;
